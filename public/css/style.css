@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: cadetblue;
+}
+
+body {
+    font-family: "Noto Sans", serif;
+    max-width: 800px;
+    background-color: white;
+    margin: 0 auto;
+    font-size: 14px; /* Increased font size for better readability */
+    padding: 10px;
+}
+
+h3 {
+    font-size: 28px; /* Increased heading font size */
+    color: tomato;
+    padding: 10px;
+    border-bottom: 1px solid #afafaf;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-collapse: collapse;
+    font-size: 14px; /* Increased table font size */
+}
+
+table thead td {
+    padding: 10px;
+    background-color: lightslategrey;
+    color: white;
+    font-size: 15px; /* Adjusted font size for table headers */
+    font-weight: bold;
+}
+
+table tbody td {
+    padding: 8px;
+    font-size: 14px; /* Increased font size for table body */
+}
+
+table tbody tr:nth-child(even) {
+    background-color: rgb(229, 231, 233);
+}
+
+.edit, .delete, .addbtn {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px; /* Slightly larger padding */
+    text-align: center;
+    border-radius: 5px;
+    background-color: blueviolet;
+    display: inline-block;
+    font-size: 14px; /* Increased font size for buttons */
+}
+
+.delete {
+    background-color: red;
+}
+
+p {
+    text-align: right;
+    margin-top: 5px;
+    font-size: 14px; /* Slightly larger font size */
+}
+
+.addbtn {
+    background-color: darkslategrey;
+}
+
+.form-group {
+    margin-top: 15px;
+    padding: 8px;
+}
+
+.form-group label, .form-group input {
+    display: block;
+    font-size: 14px; /* Increased font size for labels and inputs */
+}
+
+button {
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: blueviolet;
+    font-size: 14px; /* Increased button font size */
+    cursor: pointer;
+}
+
+.alert {
+    display: block;
+    padding: 10px;
+    background: forestgreen;
+    border-radius: 3px;
+    height: auto;
+    color: white;
+    font-size: 14px; /* Increased alert font size */
+}
+
+input {
+    font-size: 14px; /* Increased input font size */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 13px;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 24px; /* Adjusted for smaller screens */
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    .edit, .delete, .addbtn, button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .form-group label, .form-group input {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    table {
+        font-size: 11px;
+    }
+
+    .edit, .delete, .addbtn, button {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+
+    .form-group label, .form-group input {
+        font-size: 12px;
+    }
+}
